@@ -12,7 +12,9 @@ export default function Home() {
         </h1>
         <p className="mt-6 text-lg max-w-propose text-muted-foreground">Welcome to Digital Marketplace. Every asset on our platform is verified by our team to ensure our highest quality standards.</p>
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
-          <Link href="/products" className={buttonVariants()}>Browse Trending</Link>
+          <Link href="/products" className={buttonVariants()}>
+            Browse Trending
+          </Link>
         </div>
       </div>
     </MaxWidthWrapper>
