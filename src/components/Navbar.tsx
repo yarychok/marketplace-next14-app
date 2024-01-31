@@ -22,6 +22,12 @@ const Navbar = () => {
                             <div className='hidden z-50 lg:ml-8 lg:block lg:self-stretch'>
                                 <NavItems />
                             </div>
+
+                            <div className='ml-auto flex items-center'>
+                                <div className='hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6'>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </MaxWidthWrapper>
