@@ -1,13 +1,12 @@
 "use client"
 
-import { ShoppingCart } from 'lucide-react'
-import React from 'react'
-import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetFooter } from './ui/sheet'
-import { Separator } from './ui/separator'
 import { formatPrice } from '@/lib/utils'
+import { ShoppingCart } from 'lucide-react'
 import Link from 'next/link'
+import { Icons } from './Icons'
 import { buttonVariants } from './ui/button'
-import Image from 'next/image'
+import { Separator } from './ui/separator'
+import { Sheet, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet'
 
 const Cart = () => {
 
@@ -68,11 +67,7 @@ const Cart = () => {
                     </>
                 ) : (
                     <div className='flex h-full flex-col items-center justify-center space-y-1'>
-                        <div 
-                            className='relative mb-4 h-40 w-40 text-muted-foreground'
-                            aria-hidden='true'>
-                            <Image src='/empty-cart.png' fill alt='empty shopping cart' />
-                        </div>
+                        <Icons.emptyCart className='h-10 w-10' />
                         <div className='text-xl font-semibold'>
                             Your card is empty
                         </div>
@@ -84,7 +79,7 @@ const Cart = () => {
                                     size: 'sm',
                                     className: 'text-sm text-muted-foreground'
                                 })}>
-                                    Add items to your cart to chekout
+                                    Add items to your cart to checkout
                             </Link>
                         </SheetTrigger>
                     </div>
